@@ -1,0 +1,868 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12C7EC87260E46830074B698 /* CastroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C7EC86260E46830074B698 /* CastroApp.swift */; };
+		12C7EC89260E46830074B698 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C7EC88260E46830074B698 /* ContentView.swift */; };
+		12C7EC8B260E46850074B698 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12C7EC8A260E46850074B698 /* Assets.xcassets */; };
+		12C7EC8E260E46850074B698 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12C7EC8D260E46850074B698 /* Preview Assets.xcassets */; };
+		12C7EC99260E46850074B698 /* CastroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C7EC98260E46850074B698 /* CastroTests.swift */; };
+		12C7ECA4260E46850074B698 /* CastroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C7ECA3260E46850074B698 /* CastroUITests.swift */; };
+		12C7ECA9260E46850074B698 /* Castro WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 12C7ECA8260E46850074B698 /* Castro WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		12C7ECAE260E46860074B698 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12C7ECAD260E46860074B698 /* Assets.xcassets */; };
+		12C7ECB5260E46870074B698 /* Castro WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 12C7ECB4260E46870074B698 /* Castro WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		12C7ECBA260E46870074B698 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C7ECB9260E46870074B698 /* ContentView.swift */; };
+		12C7ECBC260E46870074B698 /* CastroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C7ECBB260E46870074B698 /* CastroApp.swift */; };
+		12C7ECBE260E46870074B698 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C7ECBD260E46870074B698 /* ComplicationController.swift */; };
+		12C7ECC0260E46870074B698 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12C7ECBF260E46870074B698 /* Assets.xcassets */; };
+		12C7ECC3260E46870074B698 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12C7ECC2260E46870074B698 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		12C7EC95260E46850074B698 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12C7EC7B260E46820074B698 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12C7EC82260E46830074B698;
+			remoteInfo = Castro;
+		};
+		12C7ECA0260E46850074B698 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12C7EC7B260E46820074B698 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12C7EC82260E46830074B698;
+			remoteInfo = Castro;
+		};
+		12C7ECAA260E46850074B698 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12C7EC7B260E46820074B698 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12C7ECA7260E46850074B698;
+			remoteInfo = "Castro WatchKit App";
+		};
+		12C7ECB6260E46870074B698 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12C7EC7B260E46820074B698 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12C7ECB3260E46870074B698;
+			remoteInfo = "Castro WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		12C7ECCA260E46870074B698 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				12C7ECB5260E46870074B698 /* Castro WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12C7ECCE260E46870074B698 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				12C7ECA9260E46850074B698 /* Castro WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		12C7EC83260E46830074B698 /* Castro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Castro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		12C7EC86260E46830074B698 /* CastroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastroApp.swift; sourceTree = "<group>"; };
+		12C7EC88260E46830074B698 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		12C7EC8A260E46850074B698 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		12C7EC8D260E46850074B698 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		12C7EC8F260E46850074B698 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12C7EC94260E46850074B698 /* CastroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CastroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		12C7EC98260E46850074B698 /* CastroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastroTests.swift; sourceTree = "<group>"; };
+		12C7EC9A260E46850074B698 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12C7EC9F260E46850074B698 /* CastroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CastroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		12C7ECA3260E46850074B698 /* CastroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastroUITests.swift; sourceTree = "<group>"; };
+		12C7ECA5260E46850074B698 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12C7ECA8260E46850074B698 /* Castro WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Castro WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12C7ECAD260E46860074B698 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		12C7ECAF260E46860074B698 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12C7ECB4260E46870074B698 /* Castro WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Castro WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12C7ECB9260E46870074B698 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		12C7ECBB260E46870074B698 /* CastroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastroApp.swift; sourceTree = "<group>"; };
+		12C7ECBD260E46870074B698 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		12C7ECBF260E46870074B698 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		12C7ECC2260E46870074B698 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		12C7ECC4260E46870074B698 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12C7EC80260E46830074B698 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12C7EC91260E46850074B698 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12C7EC9C260E46850074B698 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12C7ECB1260E46870074B698 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12C7EC7A260E46820074B698 = {
+			isa = PBXGroup;
+			children = (
+				12C7EC85260E46830074B698 /* Castro */,
+				12C7EC97260E46850074B698 /* CastroTests */,
+				12C7ECA2260E46850074B698 /* CastroUITests */,
+				12C7ECAC260E46850074B698 /* Castro WatchKit App */,
+				12C7ECB8260E46870074B698 /* Castro WatchKit Extension */,
+				12C7EC84260E46830074B698 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		12C7EC84260E46830074B698 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12C7EC83260E46830074B698 /* Castro.app */,
+				12C7EC94260E46850074B698 /* CastroTests.xctest */,
+				12C7EC9F260E46850074B698 /* CastroUITests.xctest */,
+				12C7ECA8260E46850074B698 /* Castro WatchKit App.app */,
+				12C7ECB4260E46870074B698 /* Castro WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		12C7EC85260E46830074B698 /* Castro */ = {
+			isa = PBXGroup;
+			children = (
+				12C7EC86260E46830074B698 /* CastroApp.swift */,
+				12C7EC88260E46830074B698 /* ContentView.swift */,
+				12C7EC8A260E46850074B698 /* Assets.xcassets */,
+				12C7EC8F260E46850074B698 /* Info.plist */,
+				12C7EC8C260E46850074B698 /* Preview Content */,
+			);
+			path = Castro;
+			sourceTree = "<group>";
+		};
+		12C7EC8C260E46850074B698 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				12C7EC8D260E46850074B698 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		12C7EC97260E46850074B698 /* CastroTests */ = {
+			isa = PBXGroup;
+			children = (
+				12C7EC98260E46850074B698 /* CastroTests.swift */,
+				12C7EC9A260E46850074B698 /* Info.plist */,
+			);
+			path = CastroTests;
+			sourceTree = "<group>";
+		};
+		12C7ECA2260E46850074B698 /* CastroUITests */ = {
+			isa = PBXGroup;
+			children = (
+				12C7ECA3260E46850074B698 /* CastroUITests.swift */,
+				12C7ECA5260E46850074B698 /* Info.plist */,
+			);
+			path = CastroUITests;
+			sourceTree = "<group>";
+		};
+		12C7ECAC260E46850074B698 /* Castro WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				12C7ECAD260E46860074B698 /* Assets.xcassets */,
+				12C7ECAF260E46860074B698 /* Info.plist */,
+			);
+			path = "Castro WatchKit App";
+			sourceTree = "<group>";
+		};
+		12C7ECB8260E46870074B698 /* Castro WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				12C7ECB9260E46870074B698 /* ContentView.swift */,
+				12C7ECBB260E46870074B698 /* CastroApp.swift */,
+				12C7ECBD260E46870074B698 /* ComplicationController.swift */,
+				12C7ECBF260E46870074B698 /* Assets.xcassets */,
+				12C7ECC4260E46870074B698 /* Info.plist */,
+				12C7ECC1260E46870074B698 /* Preview Content */,
+			);
+			path = "Castro WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		12C7ECC1260E46870074B698 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				12C7ECC2260E46870074B698 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		12C7EC82260E46830074B698 /* Castro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12C7ECCF260E46870074B698 /* Build configuration list for PBXNativeTarget "Castro" */;
+			buildPhases = (
+				12C7EC7F260E46830074B698 /* Sources */,
+				12C7EC80260E46830074B698 /* Frameworks */,
+				12C7EC81260E46830074B698 /* Resources */,
+				12C7ECCE260E46870074B698 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12C7ECAB260E46850074B698 /* PBXTargetDependency */,
+			);
+			name = Castro;
+			productName = Castro;
+			productReference = 12C7EC83260E46830074B698 /* Castro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		12C7EC93260E46850074B698 /* CastroTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12C7ECD2260E46870074B698 /* Build configuration list for PBXNativeTarget "CastroTests" */;
+			buildPhases = (
+				12C7EC90260E46850074B698 /* Sources */,
+				12C7EC91260E46850074B698 /* Frameworks */,
+				12C7EC92260E46850074B698 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12C7EC96260E46850074B698 /* PBXTargetDependency */,
+			);
+			name = CastroTests;
+			productName = CastroTests;
+			productReference = 12C7EC94260E46850074B698 /* CastroTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		12C7EC9E260E46850074B698 /* CastroUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12C7ECD5260E46870074B698 /* Build configuration list for PBXNativeTarget "CastroUITests" */;
+			buildPhases = (
+				12C7EC9B260E46850074B698 /* Sources */,
+				12C7EC9C260E46850074B698 /* Frameworks */,
+				12C7EC9D260E46850074B698 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12C7ECA1260E46850074B698 /* PBXTargetDependency */,
+			);
+			name = CastroUITests;
+			productName = CastroUITests;
+			productReference = 12C7EC9F260E46850074B698 /* CastroUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		12C7ECA7260E46850074B698 /* Castro WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12C7ECCB260E46870074B698 /* Build configuration list for PBXNativeTarget "Castro WatchKit App" */;
+			buildPhases = (
+				12C7ECA6260E46850074B698 /* Resources */,
+				12C7ECCA260E46870074B698 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12C7ECB7260E46870074B698 /* PBXTargetDependency */,
+			);
+			name = "Castro WatchKit App";
+			productName = "Castro WatchKit App";
+			productReference = 12C7ECA8260E46850074B698 /* Castro WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		12C7ECB3260E46870074B698 /* Castro WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12C7ECC7260E46870074B698 /* Build configuration list for PBXNativeTarget "Castro WatchKit Extension" */;
+			buildPhases = (
+				12C7ECB0260E46870074B698 /* Sources */,
+				12C7ECB1260E46870074B698 /* Frameworks */,
+				12C7ECB2260E46870074B698 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Castro WatchKit Extension";
+			productName = "Castro WatchKit Extension";
+			productReference = 12C7ECB4260E46870074B698 /* Castro WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		12C7EC7B260E46820074B698 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					12C7EC82260E46830074B698 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					12C7EC93260E46850074B698 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 12C7EC82260E46830074B698;
+					};
+					12C7EC9E260E46850074B698 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 12C7EC82260E46830074B698;
+					};
+					12C7ECA7260E46850074B698 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					12C7ECB3260E46870074B698 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 12C7EC7E260E46820074B698 /* Build configuration list for PBXProject "Castro" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 12C7EC7A260E46820074B698;
+			productRefGroup = 12C7EC84260E46830074B698 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				12C7EC82260E46830074B698 /* Castro */,
+				12C7EC93260E46850074B698 /* CastroTests */,
+				12C7EC9E260E46850074B698 /* CastroUITests */,
+				12C7ECA7260E46850074B698 /* Castro WatchKit App */,
+				12C7ECB3260E46870074B698 /* Castro WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		12C7EC81260E46830074B698 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12C7EC8E260E46850074B698 /* Preview Assets.xcassets in Resources */,
+				12C7EC8B260E46850074B698 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12C7EC92260E46850074B698 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12C7EC9D260E46850074B698 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12C7ECA6260E46850074B698 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12C7ECAE260E46860074B698 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12C7ECB2260E46870074B698 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12C7ECC3260E46870074B698 /* Preview Assets.xcassets in Resources */,
+				12C7ECC0260E46870074B698 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12C7EC7F260E46830074B698 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12C7EC89260E46830074B698 /* ContentView.swift in Sources */,
+				12C7EC87260E46830074B698 /* CastroApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12C7EC90260E46850074B698 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12C7EC99260E46850074B698 /* CastroTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12C7EC9B260E46850074B698 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12C7ECA4260E46850074B698 /* CastroUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12C7ECB0260E46870074B698 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12C7ECBA260E46870074B698 /* ContentView.swift in Sources */,
+				12C7ECBC260E46870074B698 /* CastroApp.swift in Sources */,
+				12C7ECBE260E46870074B698 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		12C7EC96260E46850074B698 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12C7EC82260E46830074B698 /* Castro */;
+			targetProxy = 12C7EC95260E46850074B698 /* PBXContainerItemProxy */;
+		};
+		12C7ECA1260E46850074B698 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12C7EC82260E46830074B698 /* Castro */;
+			targetProxy = 12C7ECA0260E46850074B698 /* PBXContainerItemProxy */;
+		};
+		12C7ECAB260E46850074B698 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12C7ECA7260E46850074B698 /* Castro WatchKit App */;
+			targetProxy = 12C7ECAA260E46850074B698 /* PBXContainerItemProxy */;
+		};
+		12C7ECB7260E46870074B698 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12C7ECB3260E46870074B698 /* Castro WatchKit Extension */;
+			targetProxy = 12C7ECB6260E46870074B698 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		12C7ECC5260E46870074B698 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		12C7ECC6260E46870074B698 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		12C7ECC8260E46870074B698 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Castro WatchKit Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Castro WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.blumobile.Castro.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		12C7ECC9260E46870074B698 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Castro WatchKit Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Castro WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.blumobile.Castro.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		12C7ECCC260E46870074B698 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = Castro_WatchKit_Extension;
+				INFOPLIST_FILE = "Castro WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blumobile.Castro.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		12C7ECCD260E46870074B698 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = Castro_WatchKit_Extension;
+				INFOPLIST_FILE = "Castro WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blumobile.Castro.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		12C7ECD0260E46870074B698 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Castro/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Castro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.blumobile.Castro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		12C7ECD1260E46870074B698 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Castro/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Castro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.blumobile.Castro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		12C7ECD3260E46870074B698 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CastroTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.blumobile.CastroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Castro.app/Castro";
+			};
+			name = Debug;
+		};
+		12C7ECD4260E46870074B698 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CastroTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.blumobile.CastroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Castro.app/Castro";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		12C7ECD6260E46870074B698 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CastroUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.blumobile.CastroUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Castro;
+			};
+			name = Debug;
+		};
+		12C7ECD7260E46870074B698 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CastroUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.blumobile.CastroUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Castro;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12C7EC7E260E46820074B698 /* Build configuration list for PBXProject "Castro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12C7ECC5260E46870074B698 /* Debug */,
+				12C7ECC6260E46870074B698 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12C7ECC7260E46870074B698 /* Build configuration list for PBXNativeTarget "Castro WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12C7ECC8260E46870074B698 /* Debug */,
+				12C7ECC9260E46870074B698 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12C7ECCB260E46870074B698 /* Build configuration list for PBXNativeTarget "Castro WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12C7ECCC260E46870074B698 /* Debug */,
+				12C7ECCD260E46870074B698 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12C7ECCF260E46870074B698 /* Build configuration list for PBXNativeTarget "Castro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12C7ECD0260E46870074B698 /* Debug */,
+				12C7ECD1260E46870074B698 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12C7ECD2260E46870074B698 /* Build configuration list for PBXNativeTarget "CastroTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12C7ECD3260E46870074B698 /* Debug */,
+				12C7ECD4260E46870074B698 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12C7ECD5260E46870074B698 /* Build configuration list for PBXNativeTarget "CastroUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12C7ECD6260E46870074B698 /* Debug */,
+				12C7ECD7260E46870074B698 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 12C7EC7B260E46820074B698 /* Project object */;
+}
