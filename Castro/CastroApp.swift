@@ -6,9 +6,12 @@
 //
 
 import SwiftUI
+import GoogleCast
 
 @main
 struct CastroApp: App {
+    private let castSessionManager = CastSessionManager()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

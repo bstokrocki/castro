@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		126C464326511E8F00A0C435 /* CastSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126C464226511E8F00A0C435 /* CastSession.swift */; };
+		126C464A2651239800A0C435 /* CastSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126C46492651239800A0C435 /* CastSessionManager.swift */; };
 		12C7EC87260E46830074B698 /* CastroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C7EC86260E46830074B698 /* CastroApp.swift */; };
 		12C7EC89260E46830074B698 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C7EC88260E46830074B698 /* ContentView.swift */; };
 		12C7EC8B260E46850074B698 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12C7EC8A260E46850074B698 /* Assets.xcassets */; };
@@ -21,6 +23,8 @@
 		12C7ECBE260E46870074B698 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C7ECBD260E46870074B698 /* ComplicationController.swift */; };
 		12C7ECC0260E46870074B698 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12C7ECBF260E46870074B698 /* Assets.xcassets */; };
 		12C7ECC3260E46870074B698 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12C7ECC2260E46870074B698 /* Preview Assets.xcassets */; };
+		12C7ED06260E490D0074B698 /* GcmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C7ED05260E490D0074B698 /* GcmService.swift */; };
+		3BD761F909F7033B674266A5 /* libPods-Castro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D325441453DB64CD941967CB /* libPods-Castro.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +84,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0BD29DF702242241306D0C67 /* Pods-Castro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Castro.debug.xcconfig"; path = "Target Support Files/Pods-Castro/Pods-Castro.debug.xcconfig"; sourceTree = "<group>"; };
+		126C464226511E8F00A0C435 /* CastSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastSession.swift; sourceTree = "<group>"; };
+		126C46492651239800A0C435 /* CastSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastSessionManager.swift; sourceTree = "<group>"; };
 		12C7EC83260E46830074B698 /* Castro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Castro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12C7EC86260E46830074B698 /* CastroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastroApp.swift; sourceTree = "<group>"; };
 		12C7EC88260E46830074B698 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,6 +109,9 @@
 		12C7ECBF260E46870074B698 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12C7ECC2260E46870074B698 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		12C7ECC4260E46870074B698 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12C7ED05260E490D0074B698 /* GcmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GcmService.swift; sourceTree = "<group>"; };
+		CCE2D2EA09FFF5A3212840EA /* Pods-Castro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Castro.release.xcconfig"; path = "Target Support Files/Pods-Castro/Pods-Castro.release.xcconfig"; sourceTree = "<group>"; };
+		D325441453DB64CD941967CB /* libPods-Castro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Castro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BD761F909F7033B674266A5 /* libPods-Castro.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +144,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D602FAC6C5F3FD13C02943C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -145,6 +163,8 @@
 				12C7ECAC260E46850074B698 /* Castro WatchKit App */,
 				12C7ECB8260E46870074B698 /* Castro WatchKit Extension */,
 				12C7EC84260E46830074B698 /* Products */,
+				EB6A67A7402F84E2722D16B1 /* Pods */,
+				6723E4E2EC28CFF9357C9352 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,6 +188,9 @@
 				12C7EC8A260E46850074B698 /* Assets.xcassets */,
 				12C7EC8F260E46850074B698 /* Info.plist */,
 				12C7EC8C260E46850074B698 /* Preview Content */,
+				12C7ED05260E490D0074B698 /* GcmService.swift */,
+				126C464226511E8F00A0C435 /* CastSession.swift */,
+				126C46492651239800A0C435 /* CastSessionManager.swift */,
 			);
 			path = Castro;
 			sourceTree = "<group>";
@@ -228,6 +251,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		6723E4E2EC28CFF9357C9352 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D325441453DB64CD941967CB /* libPods-Castro.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB6A67A7402F84E2722D16B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0BD29DF702242241306D0C67 /* Pods-Castro.debug.xcconfig */,
+				CCE2D2EA09FFF5A3212840EA /* Pods-Castro.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -235,10 +275,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12C7ECCF260E46870074B698 /* Build configuration list for PBXNativeTarget "Castro" */;
 			buildPhases = (
+				B536A8C90AE4999B74C22FE0 /* [CP] Check Pods Manifest.lock */,
 				12C7EC7F260E46830074B698 /* Sources */,
 				12C7EC80260E46830074B698 /* Frameworks */,
 				12C7EC81260E46830074B698 /* Resources */,
 				12C7ECCE260E46870074B698 /* Embed Watch Content */,
+				7B87A9E1FDFA9C10157E6995 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -292,6 +334,7 @@
 			buildPhases = (
 				12C7ECA6260E46850074B698 /* Resources */,
 				12C7ECCA260E46870074B698 /* Embed App Extensions */,
+				D602FAC6C5F3FD13C02943C2 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -413,13 +456,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7B87A9E1FDFA9C10157E6995 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Castro/Pods-Castro-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Castro/Pods-Castro-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Castro/Pods-Castro-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B536A8C90AE4999B74C22FE0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Castro-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		12C7EC7F260E46830074B698 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				12C7EC89260E46830074B698 /* ContentView.swift in Sources */,
+				126C464A2651239800A0C435 /* CastSessionManager.swift in Sources */,
 				12C7EC87260E46830074B698 /* CastroApp.swift in Sources */,
+				12C7ED06260E490D0074B698 /* GcmService.swift in Sources */,
+				126C464326511E8F00A0C435 /* CastSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -592,6 +680,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Castro WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = P829SD648Y;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Castro WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -615,6 +704,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Castro WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = P829SD648Y;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Castro WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -640,6 +730,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P829SD648Y;
 				IBSC_MODULE = Castro_WatchKit_Extension;
 				INFOPLIST_FILE = "Castro WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.blumobile.Castro.watchkitapp;
@@ -659,6 +750,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P829SD648Y;
 				IBSC_MODULE = Castro_WatchKit_Extension;
 				INFOPLIST_FILE = "Castro WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.blumobile.Castro.watchkitapp;
@@ -674,11 +766,13 @@
 		};
 		12C7ECD0260E46870074B698 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BD29DF702242241306D0C67 /* Pods-Castro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Castro/Preview Content\"";
+				DEVELOPMENT_TEAM = P829SD648Y;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Castro/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
@@ -696,11 +790,13 @@
 		};
 		12C7ECD1260E46870074B698 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCE2D2EA09FFF5A3212840EA /* Pods-Castro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Castro/Preview Content\"";
+				DEVELOPMENT_TEAM = P829SD648Y;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Castro/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
