@@ -8,14 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    let vm: PlayerViewModel
+    
+    init(viewModel: PlayerViewModel) {
+        self.vm = viewModel
+    }
+    
     var body: some View {
-        Text("Hello, World!")
-            .padding()
+        Button(action: {
+            vm.onClick()
+        }, label: {
+            Image("Play")
+                .renderingMode(.original)
+        })
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(viewModel: PlayerViewModel())
     }
 }

@@ -21,7 +21,7 @@ class CastSessionManager: NSObject, GCKDiscoveryManagerListener, GCKSessionManag
     private var currentCastDevice: GCKDevice?
     private var currentCastSession = CastSession()
     
-    init(debugLoggingEnabled: Bool = true) {
+    init(debugLoggingEnabled: Bool = false) {
         self.kDebugLoggingEnabled = debugLoggingEnabled
         super.init()
         
@@ -29,6 +29,7 @@ class CastSessionManager: NSObject, GCKDiscoveryManagerListener, GCKSessionManag
         let options = GCKCastOptions(discoveryCriteria: GCKDiscoveryCriteria(applicationID: kGCKDefaultMediaReceiverApplicationID))
 //        let options = GCKCastOptions(discoveryCriteria: GCKDiscoveryCriteria(applicationID: "233637DE"))
         options.physicalVolumeButtonsWillControlDeviceVolume = true
+        options.suspendSessionsWhenBackgrounded = false
 //
         GCKCastContext.setSharedInstanceWith(options)
         
@@ -43,6 +44,9 @@ class CastSessionManager: NSObject, GCKDiscoveryManagerListener, GCKSessionManag
     
     //Called when device is found
     func didInsert(_ device: GCKDevice, at index: UInt) {
+        discoveryManager.remove(self)
+        discoveryManager.stopDiscovery()
+        
         currentCastDevice = device
         print("device found")
         sessionManager.add(self)
@@ -53,8 +57,7 @@ class CastSessionManager: NSObject, GCKDiscoveryManagerListener, GCKSessionManag
     }
     
     func sessionManager(_ sessionManager: GCKSessionManager, didStart session: GCKCastSession) {
-        print("cast session started")
-        dump(session.applicationMetadata)
+        print("56")
         
         if let client = session.remoteMediaClient {
             client.add(self)
@@ -62,16 +65,47 @@ class CastSessionManager: NSObject, GCKDiscoveryManagerListener, GCKSessionManag
     }
     
     func sessionManager(_ sessionManager: GCKSessionManager, didResumeCastSession session: GCKCastSession) {
-        print("cast session resumed")
-        dump(session.applicationMetadata)
+        print("64")
         
         if let client = session.remoteMediaClient {
             client.add(self)
         }
     }
     
+    func sessionManager(_ sessionManager: GCKSessionManager, willEnd session: GCKCastSession) {
+        print("72")
+    }
+    
+    func sessionManager(_ sessionManager: GCKSessionManager, willStart session: GCKCastSession) {
+        print("76")
+    }
+    
+    func sessionManager(_ sessionManager: GCKSessionManager, willResumeCastSession session: GCKCastSession) {
+        print("80")
+    }
+    
+    func sessionManager(_ sessionManager: GCKSessionManager, didUpdateDefaultSessionOptionsForDeviceCategory category: String) {
+        print("84")
+    }
+    
+    func sessionManager(_ sessionManager: GCKSessionManager, didEnd session: GCKCastSession, withError error: Error?) {
+        print("88")
+    }
+    
+    func sessionManager(_ sessionManager: GCKSessionManager, didSuspend session: GCKCastSession, with reason: GCKConnectionSuspendReason) {
+        print("92")
+    }
+    
+    func sessionManager(_ sessionManager: GCKSessionManager, castSession session: GCKCastSession, didReceiveDeviceStatus statusText: String?) {
+        print("96")
+    }
+    
+    func sessionManager(_ sessionManager: GCKSessionManager, castSession session: GCKCastSession, didReceiveDeviceVolume volume: Float, muted: Bool) {
+        print("100")
+    }
+    
     func sessionManager(_ sessionManager: GCKSessionManager, didFailToStart session: GCKCastSession, withError error: Error) {
-        print("Failed to start cast session")
+        print("104")
     }
     
     func remoteMediaClient(_ client: GCKRemoteMediaClient, didUpdate mediaStatus: GCKMediaStatus?) {

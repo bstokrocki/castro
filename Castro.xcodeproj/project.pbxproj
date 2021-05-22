@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1205585B2652FB8E00E06432 /* CastroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C7ECBB260E46870074B698 /* CastroApp.swift */; };
+		1205585C2652FB8E00E06432 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C7ECB9260E46870074B698 /* ContentView.swift */; };
+		120778962656E3B5000C0FE4 /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120778952656E3B5000C0FE4 /* PlayerViewModel.swift */; };
 		126C464326511E8F00A0C435 /* CastSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126C464226511E8F00A0C435 /* CastSession.swift */; };
 		126C464A2651239800A0C435 /* CastSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126C46492651239800A0C435 /* CastSessionManager.swift */; };
 		12C7EC87260E46830074B698 /* CastroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C7EC86260E46830074B698 /* CastroApp.swift */; };
@@ -18,12 +21,9 @@
 		12C7ECA9260E46850074B698 /* Castro WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 12C7ECA8260E46850074B698 /* Castro WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		12C7ECAE260E46860074B698 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12C7ECAD260E46860074B698 /* Assets.xcassets */; };
 		12C7ECB5260E46870074B698 /* Castro WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 12C7ECB4260E46870074B698 /* Castro WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		12C7ECBA260E46870074B698 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C7ECB9260E46870074B698 /* ContentView.swift */; };
-		12C7ECBC260E46870074B698 /* CastroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C7ECBB260E46870074B698 /* CastroApp.swift */; };
 		12C7ECBE260E46870074B698 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C7ECBD260E46870074B698 /* ComplicationController.swift */; };
 		12C7ECC0260E46870074B698 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12C7ECBF260E46870074B698 /* Assets.xcassets */; };
 		12C7ECC3260E46870074B698 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12C7ECC2260E46870074B698 /* Preview Assets.xcassets */; };
-		12C7ED06260E490D0074B698 /* GcmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C7ED05260E490D0074B698 /* GcmService.swift */; };
 		3BD761F909F7033B674266A5 /* libPods-Castro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D325441453DB64CD941967CB /* libPods-Castro.a */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +85,7 @@
 
 /* Begin PBXFileReference section */
 		0BD29DF702242241306D0C67 /* Pods-Castro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Castro.debug.xcconfig"; path = "Target Support Files/Pods-Castro/Pods-Castro.debug.xcconfig"; sourceTree = "<group>"; };
+		120778952656E3B5000C0FE4 /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
 		126C464226511E8F00A0C435 /* CastSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastSession.swift; sourceTree = "<group>"; };
 		126C46492651239800A0C435 /* CastSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastSessionManager.swift; sourceTree = "<group>"; };
 		12C7EC83260E46830074B698 /* Castro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Castro.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,7 +110,6 @@
 		12C7ECBF260E46870074B698 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12C7ECC2260E46870074B698 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		12C7ECC4260E46870074B698 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		12C7ED05260E490D0074B698 /* GcmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GcmService.swift; sourceTree = "<group>"; };
 		CCE2D2EA09FFF5A3212840EA /* Pods-Castro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Castro.release.xcconfig"; path = "Target Support Files/Pods-Castro/Pods-Castro.release.xcconfig"; sourceTree = "<group>"; };
 		D325441453DB64CD941967CB /* libPods-Castro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Castro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -188,7 +188,6 @@
 				12C7EC8A260E46850074B698 /* Assets.xcassets */,
 				12C7EC8F260E46850074B698 /* Info.plist */,
 				12C7EC8C260E46850074B698 /* Preview Content */,
-				12C7ED05260E490D0074B698 /* GcmService.swift */,
 				126C464226511E8F00A0C435 /* CastSession.swift */,
 				126C46492651239800A0C435 /* CastSessionManager.swift */,
 			);
@@ -238,6 +237,7 @@
 				12C7ECBD260E46870074B698 /* ComplicationController.swift */,
 				12C7ECBF260E46870074B698 /* Assets.xcassets */,
 				12C7ECC4260E46870074B698 /* Info.plist */,
+				120778952656E3B5000C0FE4 /* PlayerViewModel.swift */,
 				12C7ECC1260E46870074B698 /* Preview Content */,
 			);
 			path = "Castro WatchKit Extension";
@@ -506,7 +506,6 @@
 				12C7EC89260E46830074B698 /* ContentView.swift in Sources */,
 				126C464A2651239800A0C435 /* CastSessionManager.swift in Sources */,
 				12C7EC87260E46830074B698 /* CastroApp.swift in Sources */,
-				12C7ED06260E490D0074B698 /* GcmService.swift in Sources */,
 				126C464326511E8F00A0C435 /* CastSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -531,9 +530,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12C7ECBA260E46870074B698 /* ContentView.swift in Sources */,
-				12C7ECBC260E46870074B698 /* CastroApp.swift in Sources */,
 				12C7ECBE260E46870074B698 /* ComplicationController.swift in Sources */,
+				120778962656E3B5000C0FE4 /* PlayerViewModel.swift in Sources */,
+				1205585B2652FB8E00E06432 /* CastroApp.swift in Sources */,
+				1205585C2652FB8E00E06432 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
